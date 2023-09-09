@@ -2,18 +2,6 @@ import SwiftDiagnostics
 
 enum MacroError: String, Error {
     case isNotEnum
-    case macroDoesNotHaveRequiredGenericArgument
-    case unexpectedGenericArgument
-    case rawValuesNotAcceptable
-    case inconsistentQuotesAroundComment
-    case emptyValuesAreNotAcceptable
-    case allEnumCasesWithIntTypeMustHaveACommentForValue
-    case enumSeemsToHaveIntValuesButGenericArgumentSpecifiesString
-    case intEnumMustOnlyHaveIntValues
-    case valuesMustBeUnique
-    case badEnumCaseTrailingTrivia
-    case badEnumCaseComment
-    case couldNotFindLocationOfNode
 }
 
 extension MacroError: DiagnosticMessage {
